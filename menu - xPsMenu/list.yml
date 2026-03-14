@@ -1,51 +1,49 @@
-#    ___           _
-#  / _ \_ __ ___ | |_ ___  ___    /\/\   ___ _ __  _   _
-# / /_)/ '__/ _ \| __/ _ \/ __|  /    \ / _ \ '_ \| | | |
-#/ ___/| | | (_) | ||  __/\__ \ / /\/\ \  __/ | | | |_| |
-#\/    |_|  \___/ \__\___||___/ \/    \/\___|_| |_|\__,_|
-#     Wiki: https://xplugins.es/plugins/xpsmenu
-#            ttps://xplugins.es/discord
 menu:
-  title: "&0✦ Your Protections [1/1] ✦"
+  title: "&#00E5FF✦ Your Protections [1/1]"
   size: 54
   filler:
     material: BLACK_STAINED_GLASS_PANE
     name: " "
 
-  # This is the design of the block that represents each region in the center of the menu
   region-item:
     material: BEDROCK
-    name: "&#FF0000✦ Protection &8▸ &f%region%"
+    name: "&#00E5FFProtection &8▸ &#B388FF%region_alias%"
     lore:
-      - "&8Button | Teleport"
+      - "&8Action | Teleport"
       - ""
-      - "&8| &fOwners: &c%owners%"
-      - "&8| &fMembers: &c%members%"
-      - "&8| &fWorld: &c%world%"
+      - "&8▪ &fOwners: &7%owners%"
+      - "&8▪ &fMembers: &7%members%"
+      - "&8▪ &fWorld: &7%world%"
+      - "&8▪ &fReal ID: &7%region%"
       - ""
-      - "&f ▸ Left Click &7- &cTeleport!"
-      - "&f ▸ Right Click &7- &cEdit protection!"
+      - "&#FFD700▸ Left-Click to teleport!"
+      - "&#FFD700▸ Right-Click to edit!"
 
   items:
-    '48':
-      material: ARROW
-      name: "&fReturn"
-      lore: []
-      action: "[OPEN_MENU] selector"
-
-    '50':
-      material: REPEATER
-      name: "&#FF0000✦ Sort by:"
+    '4':
+      material: COMPARATOR
+      name: "&#00E5FFSort Filters"
       lore:
-        - "&8Button"
+        - "&8Action | Filter"
         - ""
-        - "&f Small filter to sort"
-        - "&f your protections."
+        - "&f Sort your protections by"
+        - "&f ownership status."
         - ""
         - " %filter_all%"
         - " %filter_members%"
         - " %filter_owners%"
         - ""
-        - "&c ▸ Click to change!"
-        - ""
+        - "&#FFD700▸ Click to cycle filters!"
       action: "[CHANGE_FILTER]"
+
+    '45':
+      material: SPECTRAL_ARROW
+      name: "&#FFD700Go Back"
+      lore: []
+      action: "[OPEN_MENU] selector"
+
+    '53':
+      material: BARRIER
+      name: "&cClose Menu"
+      lore: []
+      action: "[CLOSE]"

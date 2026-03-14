@@ -1,143 +1,155 @@
-#          ___
-# __  __ / _ \___   /\/\   ___ _ __  _   _
-# \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
-#  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
-# /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
-#   Wiki: https://xplugins.es/plugins/xpsmenu
-#         https://xplugins.es/discord
 menu:
-  title: "&0✦ Editing... (%region%) ✦"
+  title: "&#00E5FF✦ Editor: %region_alias%"
   size: 54
   filler:
     material: BLACK_STAINED_GLASS_PANE
     name: " "
   items:
-    '13':
+    '4':
       material: BEDROCK
-      name: "&#FF0000✦ Protection &8▸ &f%region%"
+      name: "&#00E5FFRegion &8▸ &#B388FF%region_alias%"
       lore:
-        - "&7Editor | Info"
+        - "&7Dashboard | Info"
         - ""
-        - "&c ✦ &fHello &c%player_name%&f,"
-        - "&f you are editing your protection."
-        - ""
+        - "&f Welcome, &b%player_name%&f."
+        - "&f You are editing this region."
+        - "&8▪ &fInternal ID: &7%region%"
       action: "NONE"
-    '20':
-      material: RED_BANNER
-      name: "&#FF0000✦ Protection &8▸ &fOwners"
-      lore:
-        - "&8Button | Editor"
-        - ""
-        - "&f View the heads of the owners"
-        - "&f for this protection."
-        - ""
-        - "&c ▸ Click to view!"
-      action: "[OPEN_OWNERS]"
-    '24':
-      material: OAK_DOOR
-      name: "&#FF0000✦ Protection &8▸ &fMembers"
-      lore:
-        - "&8Button | Editor"
-        - ""
-        - "&f See who has build"
-        - "&f permissions here."
-        - ""
-        - "&c ▸ Click to view!"
-      action: "[OPEN_MEMBERS]"
-    '29':
-      material: LEAD
-      name: "&#FF0000✦ Protection &8▸ &fSet Home"
-      lore:
-        - "&8Button | Editor"
-        - ""
-        - "&f Set a new spawn point"
-        - "&f for your protection."
-        - ""
-        - "&c ▸ Click to set!"
-      action: "[PLAYER] ps sethome;[CLOSE];[MESSAGE] messages.sethome-success"
-    '31':
+
+    '22':
       material: ENDER_PEARL
-      name: "&#FF0000✦ Protection &8▸ &fTeleport"
+      name: "&#00E5FFRegion &8▸ &#FFD700Teleport"
       lore:
-        - "&8Button | Editor"
+        - "&8Action | Travel"
         - ""
         - "&f Travel directly to the center"
-        - "&f of your protection."
+        - "&f of this protection."
         - ""
-        - "&c ▸ Click to travel!"
+        - "&#FFD700▸ Click to travel!"
       action: "[CLOSE];[MESSAGE] messages.teleporting;[DELAY_CMD] 3 ps home"
-    '33':
-      material: SLIME_BALL
-      name: "&#FF0000✦ Protection &8▸ &fHide / Show"
+
+    '28':
+      material: RED_DYE
+      name: "&#00E5FFRegion &8▸ &cBanned Players"
       lore:
-        - "&8Button | Editor"
+        - "&8Action | Management"
         - ""
-        - "&f Make your protection block"
-        - "&f invisible or visible again."
+        - "&f Manage players who are blocked"
+        - "&f from entering this region."
         - ""
-        - "&8▪ &fStatus: %hidden_status%"
+        - "&#FFD700▸ Click to view!"
+      action: "[OPEN_BANNED]"
+
+    '29':
+      material: GOLDEN_HELMET
+      name: "&#00E5FFRegion &8▸ &#FFD700Owners"
+      lore:
+        - "&8Action | Management"
         - ""
-        - "&f ▸ Left Click &7- &cHide block!"
-        - "&f ▸ Right Click &7- &cShow block!"
+        - "&f Manage players who have full"
+        - "&f ownership of this region."
         - ""
+        - "&#FFD700▸ Click to view!"
+      action: "[OPEN_OWNERS]"
+
+    '30':
+      material: IRON_HELMET
+      name: "&#00E5FFRegion &8▸ &#FFD700Members"
+      lore:
+        - "&8Action | Management"
+        - ""
+        - "&f Manage players who can"
+        - "&f build and interact here."
+        - ""
+        - "&#FFD700▸ Click to view!"
+      action: "[OPEN_MEMBERS]"
+
+    '31':
+      material: REDSTONE_TORCH
+      name: "&#00E5FFRegion &8▸ &#FFD700Flags (Settings)"
+      lore:
+        - "&8Action | Settings"
+        - ""
+        - "&f Configure PvP, mob spawning,"
+        - "&f explosions, and more."
+        - ""
+        - "&#FFD700▸ Click to open!"
+      action: "[OPEN_MENU] flags"
+
+    '32':
+      material: GLASS
+      name: "&#00E5FFRegion &8▸ &#B388FFToggle Visibility"
+      lore:
+        - "&8Action | Visuals"
+        - ""
+        - "&f Hide or show the physical block"
+        - "&f that creates this protection."
+        - ""
+        - "&8▪ &fCurrent Status: %hidden_status%"
+        - ""
+        - "&#FFD700▸ Left-Click &7- &fHide Block!"
+        - "&#FFD700▸ Right-Click &7- &fShow Block!"
       action_left: "[PLAYER] ps hide;[MESSAGE] messages.hide-success;[REFRESH]"
       action_right: "[PLAYER] ps unhide;[MESSAGE] messages.unhide-success;[REFRESH]"
-    '38':
+
+    '33':
       material: NAME_TAG
-      name: "&#FF0000✦ Protection &8▸ &fRename"
+      name: "&#00E5FFRegion &8▸ &#B388FFRename Region"
       lore:
-        - "&8Button | Editor"
+        - "&8Action | Customization"
         - ""
-        - "&f Give it a custom name."
-        - "&c Do not use color codes!"
+        - "&f Give your protection a unique,"
+        - "&f custom display name."
         - ""
-        - "&c ▸ Click to rename!"
-      action: "[PLAYER] ps name"
-    '40':
-      material: PAPER
-      name: "&#FF0000✦ Protection &8▸ &fFlags (Settings)"
+        - "&8▪ &fCurrent Name: &#00E5FF%region_alias%"
+        - "&c (Do not use color codes!)"
+        - ""
+        - "&#FFD700▸ Click to rename!"
+      action: "[RENAME]"
+
+    '34':
+      material: WHITE_BED
+      name: "&#00E5FFRegion &8▸ &#B388FFSet Home"
       lore:
-        - "&8Button | Editor"
+        - "&8Action | Settings"
         - ""
-        - "&f Open the advanced menu to"
-        - "&f configure PvP, Mobs, and Explosions."
+        - "&f Update the spawn location for"
+        - "&f when you teleport here."
         - ""
-        - "&c ▸ Click to open!"
-      action: "[OPEN_MENU] flags"
-    '42':
+        - "&#FFD700▸ Click to set home!"
+      action: "[PLAYER] ps sethome;[CLOSE];[MESSAGE] messages.sethome-success"
+
+    '37':
       material: GLOWSTONE_DUST
-      name: "&#FF0000✦ Protection &8▸ &fView Borders"
+      name: "&#00E5FFRegion &8▸ &#FFD700View Borders"
       lore:
-        - "&8Button | Editor"
+        - "&8Action | Visuals"
         - ""
-        - "&f Show or hide the visual"
-        - "&f limits of your zone with particles."
+        - "&f Display or hide the boundary"
+        - "&f particles of this region."
         - ""
-        - "&c ▸ Click to toggle borders!"
+        - "&#FFD700▸ Click to toggle borders!"
       action: "[PLAYER] ps view;[CLOSE];[MESSAGE] messages.border-success"
-    '45':
-      material: ARROW
-      name: "&fReturn to Protections"
-      lore:
-        - "&8Button"
-        - ""
-        - "&f Click to return to"
-        - "&f the list of all your zones."
-        - ""
-        - "&c ▸ Click to return!"
-      action: "[OPEN_LIST]"
-    '49':
+
+    '43':
       material: TNT
-      name: "&#FF0000✦ Protection &8▸ &cDelete Protection!"
+      name: "&#00E5FFRegion &8▸ &cDelete Protection"
       lore:
-        - "&8Button | Danger"
+        - "&8Action | Danger"
         - ""
-        - "&f Destroy this protection and"
-        - "&f recover your original block."
+        - "&f Destroy this protection area and"
+        - "&f retrieve your original block."
         - "&c This action cannot be undone!"
         - ""
-        - "&c ▸ Click to destroy!"
+        - "&#FFD700▸ Click to delete!"
       action: "[PLAYER] ps reclaim;[CLOSE]"
+
+    '45':
+      material: SPECTRAL_ARROW
+      name: "&#FFD700Back to Protections"
+      lore: []
+      action: "[OPEN_LIST]"
+
     '53':
       material: BARRIER
       name: "&cClose Menu"

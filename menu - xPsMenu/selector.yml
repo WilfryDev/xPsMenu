@@ -1,12 +1,5 @@
-#          ___
-# __  __ / _ \___   /\/\   ___ _ __  _   _
-# \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
-#  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
-# /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
-#   Wiki: https://xplugins.es/plugins/xpsmenu
-#         https://xplugins.es/discord
 menu:
-  title: "&0✦ Protection Selector ✦"
+  title: "&#00E5FF✦ Protection Selector"
   size: 27
   filler:
     material: BLACK_STAINED_GLASS_PANE
@@ -14,18 +7,17 @@ menu:
   items:
     '13':
       material: COMPASS
-      name: "&#FF0000✦ View Protections ✦"
+      name: "&#00E5FFView All Protections"
       lore:
         - "&7Protection List"
         - ""
-        - "&f Opens the protection list menu."
-        - "&f Easily teleport to your zones."
+        - "&f Open the list of all your"
+        - "&f claimed protections."
         - ""
-        - "&c ▸ Click to open menu!"
-        - ""
+        - "&#FFD700▸ Click to open the menu!"
       action: "[OPEN_LIST]"
     '22':
-      material: BOOK
-      name: "&fClose Menu"
+      material: BARRIER
+      name: "&cClose Menu"
       lore: []
       action: "[CLOSE]"

@@ -1,0 +1,48 @@
+menu:
+  title: "&#00E5FF✦ Manage: %target_name%"
+  size: 45
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    '13':
+      material: PLAYER_HEAD
+      name: "&#00E5FF%target_name%"
+      lore:
+        - "&7Player Information"
+        - ""
+        - "&f Current Role: &b%target_role%"
+        - ""
+      action: "NONE"
+    '21':
+      material: ORANGE_DYE
+      name: "&e&lREMOVE PLAYER"
+      lore:
+        - "&8Action | Management"
+        - ""
+        - "&f Click to remove this player's"
+        - "&f privileges in your region."
+        - ""
+        - "&#FFD700▸ Click to remove %target_name%!"
+      action: "[REMOVE_PLAYER]"
+    '23':
+      material: RED_DYE
+      name: "&c&lBAN PLAYER"
+      lore:
+        - "&8Action | Punishment"
+        - ""
+        - "&f Click to completely ban this"
+        - "&f player from entering the region."
+        - ""
+        - "&#FFD700▸ Click to ban %target_name%!"
+      action: "[BAN_PLAYER]"
+    '36':
+      material: SPECTRAL_ARROW
+      name: "&#FFD700Go Back"
+      lore: []
+      action: "[BACK_TO_LIST]"
+    '44':
+      material: BARRIER
+      name: "&cClose Menu"
+      lore: []
+      action: "[CLOSE]"

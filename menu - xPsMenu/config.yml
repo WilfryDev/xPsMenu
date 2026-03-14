@@ -3,74 +3,90 @@
 # \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
 #  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
 # /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
-#   Wiki: https://xplugins.es/plugins/xpsmenu
-#         https://xplugins.es/discord
+#    https://xplugins.es/plugins/xpsmenu
 
-prefix: ""
+# Plugin prefix. To disable, set to prefix: false or prefix: ""
+prefix: "&#00E5FF&lPsMenu &8» &r"
 
-menu-cooldown: 5
+# Menu open cooldown in seconds (prevents spam/lag). OPs bypass this.
+menu-cooldown: 3
 
 messages:
-  no-permission: "&#FF0000 ✗ &fYou lack the required permissions."
-  not-a-region: "&#FF0000 ✗ &fThis block doesn't belong to a valid protection."
-  no-access: "&#FF0000 ✗ &fYou do not own this protection."
-  cooldown-active: "&c ✦ &fPlease wait &e%time%s &fbefore opening the menu again."
-  teleporting: "&f ✦ &fTeleporting in &c3 seconds&f. Do not move."
-  teleport-instant: "&#FF0000 ✦ &fTeleported to your protection (Bypass active)."
-  teleport-cancelled: "&#FF0000 ✗ &fMovement detected. Teleport cancelled."
-  reload-success: "&f ✔ &fConfiguration files successfully reloaded."
-  flag-success: "&f ✔ &fFlag settings updated."
-  sethome-success: "&f ✔ &fNew spawn point established."
-  last-owner-error: "&#FF0000 ⚠ &fYou cannot remove yourself if you are the last owner."
-  player-removed: "&f ✔ &fPlayer successfully removed from the protection."
-  hide-success: "&f ✔ &fProtection block hidden."
-  unhide-success: "&f ✔ &fProtection block is now visible."
-  border-success: "&f ✔ &fVisual borders updated."
+  no-permission: "&c ✘ Whoops! &fYou do not have permission to do this."
+  not-a-region: "&c ✘ Error! &fThis block does not belong to a valid protection."
+  no-access: "&c ✘ Error! &fYou are not the owner of this protection."
+  cooldown-active: "&e ⏳ Hold on! &fPlease wait &e%time%s &fbefore opening the menu again."
+  teleporting: "&b ℹ Info! &fTeleporting in &b3 seconds&f. Please do not move."
+  teleport-instant: "&#00E5FF ✔ Info! &fYou have been teleported to your protection (Bypass active)."
+  teleport-cancelled: "&c ✘ Cancelled! &fYou moved. Teleportation cancelled."
+  reload-success: "&#00E5FF ✔ Success! &fConfiguration files reloaded successfully."
+  flag-success: "&#00E5FF ✔ Success! &fFlag settings have been updated."
+  sethome-success: "&#00E5FF ✔ Success! &fNew protection spawn point set."
+  last-owner-error: "&c ⚠ Warning! &fYou cannot remove yourself if you are the last owner."
+  player-removed: "&#00E5FF ✔ Success! &fPlayer successfully removed from the protection."
+  hide-success: "&#00E5FF ✔ Success! &fProtection block is now hidden."
+  unhide-success: "&#00E5FF ✔ Success! &fProtection block is now visible."
+  border-success: "&#00E5FF ✔ Success! &fVisual borders updated."
 
-  status-hidden: "&cHidden ✗"
-  status-visible: "&fVisible ✔"
-  flag-allow: "&fAllowed ✔"
-  flag-deny: "&cDenied ✗"
-  flag-default: "&7Default ✦"
+  region-created: "&#00E5FF ✔ Success! &fYou have claimed a new protected area."
+  region-removed: "&c ℹ Info! &fYou have destroyed your protection and recovered the block."
+  rename-prompt: "&e ℹ &fType the new name for your protection in chat (or type '&ccancel&f' to exit)."
+  rename-success: "&#00E5FF ✔ Success! &fProtection renamed to &b%name%&f."
+  rename-cancel: "&c ℹ Cancelled! &fRename operation aborted."
+
+  add-member-prompt: "&e ℹ &fType the player's name in chat to add them as a MEMBER (or '&ccancel&f')."
+  add-member-success: "&#00E5FF ✔ Success! &fAdded &b%name%&f as a member."
+  add-owner-prompt: "&e ℹ &fType the player's name in chat to add them as an OWNER (or '&ccancel&f')."
+  add-owner-success: "&#00E5FF ✔ Success! &fAdded &b%name%&f as an owner."
+  add-banned-prompt: "&e ℹ &fType the player's name in chat to BAN them (or '&ccancel&f')."
+  add-banned-success: "&c ✔ Success! &fYou have banned &c%name%&f from your protection."
+  add-cancel: "&c ℹ Cancelled! &fOperation aborted."
+  banned-kick: "&c&lSTOP! &fYou are banned from this area and cannot enter."
+
+  status-hidden: "&cHidden ✘"
+  status-visible: "&aVisible ✔"
+  flag-allow: "&aAllowed ✔"
+  flag-deny: "&cDenied ✘"
+  flag-default: "&7Default ⚬"
 
 help-message:
   - ""
-  - "&#FF0000✦ &lPROTECTION SYSTEM &r&#FF0000✦"
+  - "&#00E5FF✦ &lPROTECTION SYSTEM &r&#00E5FF✦"
   - ""
-  - "&f ▸ &c/psmenu help &7- &fDisplays this menu."
-  - "&f ▸ &c/psmenu reload &7- &fLive reload configuration files."
-  - "&f ▸ &cShift + Right Click &7- &fOpen menu on your protection."
+  - "&#FFD700▸ &f/psmenu help &7- &fDisplays this help menu."
+  - "&#FFD700▸ &f/psmenu reload &7- &fReloads all plugin files."
+  - "&#B388FF▸ &fShift + Right Click &7- &fOpens the menu on your protection block."
   - ""
 
 admin-help-message:
   - ""
-  - "&#FF0000✦ &lxPSMENU ADMINISTRATION &r&#FF0000✦"
+  - "&#00E5FF✦ &lXPSMENU ADMINISTRATION &r&#00E5FF✦"
   - ""
-  - "&f ▸ &c/psmenu reload &7- &fLive reload configuration files."
-  - "&f ▸ &c/psmenu clearall &7- &fDelete all protections on the server."
+  - "&#FFD700▸ &f/psmenu reload &7- &fReloads live files."
+  - "&#FFD700▸ &f/psmenu clearall &7- &fDeletes all protections on the server."
   - ""
 
 region-events:
   enabled: true
   enter:
-    chat: "&f ✦ &fYou are entering &c%owner%&f's territory."
-    title: "&#FF0000Attention"
-    subtitle: "&fEntering &c%owner%&f's region"
-    actionbar: "&fEntering protection owned by &c%owner%"
+    chat: "&e ℹ Welcome! &fYou are entering &b%owner%'s &fproperty."
+    title: "&#00E5FFEntering Region"
+    subtitle: "&fOwned by &b%owner%"
+    actionbar: "&bYou have entered %owner%'s protection"
   leave:
     chat: ""
     title: ""
     subtitle: ""
-    actionbar: "&c✦ &fLeaving &c%owner%&f's protection."
+    actionbar: "&cLeaving %owner%'s protection"
 
 sounds:
-  menu-open: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+  menu-open: "ENTITY_EXPERIENCE_ORB_PICKUP"
   button-click: "UI_BUTTON_CLICK"
   teleport: "ENTITY_ENDERMAN_TELEPORT"
   error: "ENTITY_VILLAGER_NO"
 
 particles:
-  menu-open: "ASH"
-  teleport: "DRAGON_BREATH"
+  menu-open: "END_ROD"
+  teleport: "PORTAL"
 
 version: v1.0.0
