@@ -1,0 +1,172 @@
+#          ___
+# __  __ / _ \___   /\/\   ___ _ __  _   _
+# \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
+#  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
+# /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
+#   Wiki: https://xplugins.es/plugins/xpsmenu
+#         https://xplugins.es/discord
+menu:
+  title: "&0✦ Flags (%region%) ✦"
+  size: 54
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    '21':
+      material: IRON_BARS
+      name: "&#FF0000✦ Flag &8▸ &f(entry)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want players"
+        - "&f to be able to enter."
+        - ""
+        - "&8▪ &fStatus: %flag_entry%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] entry ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] entry DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '22':
+      material: ALLAY_SPAWN_EGG
+      name: "&#FF0000✦ Flag &8▸ &f(mob-spawning)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want mobs"
+        - "&f to be able to spawn."
+        - ""
+        - "&8▪ &fStatus: %flag_mob-spawning%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] mob-spawning ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] mob-spawning DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '23':
+      material: TNT
+      name: "&#FF0000✦ Flag &8▸ &f(tnt)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want TNT"
+        - "&f to be able to explode."
+        - ""
+        - "&8▪ &fStatus: %flag_tnt%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] tnt ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] tnt DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '30':
+      material: END_CRYSTAL
+      name: "&#FF0000✦ Flag &8▸ &f(wither-damage)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want the wither"
+        - "&f to deal damage and explode."
+        - ""
+        - "&8▪ &fStatus: %flag_wither-damage%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] wither-damage ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] wither-damage DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '31':
+      material: LAVA_BUCKET
+      name: "&#FF0000✦ Flag &8▸ &f(lava-flow)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want lava"
+        - "&f to be able to spread."
+        - ""
+        - "&8▪ &fStatus: %flag_lava-flow%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] lava-flow ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] lava-flow DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '32':
+      material: CAMPFIRE
+      name: "&#FF0000✦ Flag &8▸ &f(fire-spread)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want fire"
+        - "&f to be able to spread."
+        - ""
+        - "&8▪ &fStatus: %flag_fire-spread%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] fire-spread ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] fire-spread DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '39':
+      material: CREEPER_HEAD
+      name: "&#FF0000✦ Flag &8▸ &f(creeper-explosion)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want creepers"
+        - "&f to explode and deal damage."
+        - ""
+        - "&8▪ &fStatus: %flag_creeper-explosion%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] creeper-explosion ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] creeper-explosion DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '40':
+      material: DIAMOND_SWORD
+      name: "&#FF0000✦ Flag &8▸ &f(pvp)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want players"
+        - "&f to be able to fight here."
+        - ""
+        - "&8▪ &fStatus: %flag_pvp%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] pvp ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] pvp DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '41':
+      material: FEATHER
+      name: "&#FF0000✦ Flag &8▸ &f(fall-damage)"
+      lore:
+        - "&8Button | Flags"
+        - ""
+        - "&f Define if you want players"
+        - "&f to take fall damage."
+        - ""
+        - "&8▪ &fStatus: %flag_fall-damage%"
+        - "&8▪ &fGroup: &cN/A"
+        - ""
+        - "&f ▸ Left Click &7- &cAllow flag!"
+        - "&f ▸ Right Click &7- &cDeny flag!"
+      action_left: "[WG_FLAG] fall-damage ALLOW;[MESSAGE] messages.flag-success;[REFRESH]"
+      action_right: "[WG_FLAG] fall-damage DENY;[MESSAGE] messages.flag-success;[REFRESH]"
+
+    '49':
+      material: ARROW
+      name: "&fReturn"
+      lore: []
+      action: "[OPEN_MENU] gui"

@@ -1,0 +1,51 @@
+#    ___           _
+#  / _ \_ __ ___ | |_ ___  ___    /\/\   ___ _ __  _   _
+# / /_)/ '__/ _ \| __/ _ \/ __|  /    \ / _ \ '_ \| | | |
+#/ ___/| | | (_) | ||  __/\__ \ / /\/\ \  __/ | | | |_| |
+#\/    |_|  \___/ \__\___||___/ \/    \/\___|_| |_|\__,_|
+#     Wiki: https://xplugins.es/plugins/xpsmenu
+#            ttps://xplugins.es/discord
+menu:
+  title: "&0✦ Your Protections [1/1] ✦"
+  size: 54
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+
+  # This is the design of the block that represents each region in the center of the menu
+  region-item:
+    material: BEDROCK
+    name: "&#FF0000✦ Protection &8▸ &f%region%"
+    lore:
+      - "&8Button | Teleport"
+      - ""
+      - "&8| &fOwners: &c%owners%"
+      - "&8| &fMembers: &c%members%"
+      - "&8| &fWorld: &c%world%"
+      - ""
+      - "&f ▸ Left Click &7- &cTeleport!"
+      - "&f ▸ Right Click &7- &cEdit protection!"
+
+  items:
+    '48':
+      material: ARROW
+      name: "&fReturn"
+      lore: []
+      action: "[OPEN_MENU] selector"
+
+    '50':
+      material: REPEATER
+      name: "&#FF0000✦ Sort by:"
+      lore:
+        - "&8Button"
+        - ""
+        - "&f Small filter to sort"
+        - "&f your protections."
+        - ""
+        - " %filter_all%"
+        - " %filter_members%"
+        - " %filter_owners%"
+        - ""
+        - "&c ▸ Click to change!"
+        - ""
+      action: "[CHANGE_FILTER]"

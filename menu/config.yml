@@ -1,0 +1,76 @@
+#          ___
+# __  __ / _ \___   /\/\   ___ _ __  _   _
+# \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
+#  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
+# /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
+#   Wiki: https://xplugins.es/plugins/xpsmenu
+#         https://xplugins.es/discord
+
+prefix: ""
+
+menu-cooldown: 5
+
+messages:
+  no-permission: "&#FF0000 ✗ &fYou lack the required permissions."
+  not-a-region: "&#FF0000 ✗ &fThis block doesn't belong to a valid protection."
+  no-access: "&#FF0000 ✗ &fYou do not own this protection."
+  cooldown-active: "&c ✦ &fPlease wait &e%time%s &fbefore opening the menu again."
+  teleporting: "&f ✦ &fTeleporting in &c3 seconds&f. Do not move."
+  teleport-instant: "&#FF0000 ✦ &fTeleported to your protection (Bypass active)."
+  teleport-cancelled: "&#FF0000 ✗ &fMovement detected. Teleport cancelled."
+  reload-success: "&f ✔ &fConfiguration files successfully reloaded."
+  flag-success: "&f ✔ &fFlag settings updated."
+  sethome-success: "&f ✔ &fNew spawn point established."
+  last-owner-error: "&#FF0000 ⚠ &fYou cannot remove yourself if you are the last owner."
+  player-removed: "&f ✔ &fPlayer successfully removed from the protection."
+  hide-success: "&f ✔ &fProtection block hidden."
+  unhide-success: "&f ✔ &fProtection block is now visible."
+  border-success: "&f ✔ &fVisual borders updated."
+
+  status-hidden: "&cHidden ✗"
+  status-visible: "&fVisible ✔"
+  flag-allow: "&fAllowed ✔"
+  flag-deny: "&cDenied ✗"
+  flag-default: "&7Default ✦"
+
+help-message:
+  - ""
+  - "&#FF0000✦ &lPROTECTION SYSTEM &r&#FF0000✦"
+  - ""
+  - "&f ▸ &c/psmenu help &7- &fDisplays this menu."
+  - "&f ▸ &c/psmenu reload &7- &fLive reload configuration files."
+  - "&f ▸ &cShift + Right Click &7- &fOpen menu on your protection."
+  - ""
+
+admin-help-message:
+  - ""
+  - "&#FF0000✦ &lxPSMENU ADMINISTRATION &r&#FF0000✦"
+  - ""
+  - "&f ▸ &c/psmenu reload &7- &fLive reload configuration files."
+  - "&f ▸ &c/psmenu clearall &7- &fDelete all protections on the server."
+  - ""
+
+region-events:
+  enabled: true
+  enter:
+    chat: "&f ✦ &fYou are entering &c%owner%&f's territory."
+    title: "&#FF0000Attention"
+    subtitle: "&fEntering &c%owner%&f's region"
+    actionbar: "&fEntering protection owned by &c%owner%"
+  leave:
+    chat: ""
+    title: ""
+    subtitle: ""
+    actionbar: "&c✦ &fLeaving &c%owner%&f's protection."
+
+sounds:
+  menu-open: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+  button-click: "UI_BUTTON_CLICK"
+  teleport: "ENTITY_ENDERMAN_TELEPORT"
+  error: "ENTITY_VILLAGER_NO"
+
+particles:
+  menu-open: "ASH"
+  teleport: "DRAGON_BREATH"
+
+version: v1.0.0

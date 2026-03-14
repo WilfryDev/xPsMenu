@@ -1,0 +1,145 @@
+#          ___
+# __  __ / _ \___   /\/\   ___ _ __  _   _
+# \ \/ // /_)/ __| /    \ / _ \ '_ \| | | |
+#  >  </ ___/\__ \/ /\/\ \  __/ | | | |_| |
+# /_/\_\/    |___/\/    \/\___|_| |_|\__,_|
+#   Wiki: https://xplugins.es/plugins/xpsmenu
+#         https://xplugins.es/discord
+menu:
+  title: "&0✦ Editing... (%region%) ✦"
+  size: 54
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    '13':
+      material: BEDROCK
+      name: "&#FF0000✦ Protection &8▸ &f%region%"
+      lore:
+        - "&7Editor | Info"
+        - ""
+        - "&c ✦ &fHello &c%player_name%&f,"
+        - "&f you are editing your protection."
+        - ""
+      action: "NONE"
+    '20':
+      material: RED_BANNER
+      name: "&#FF0000✦ Protection &8▸ &fOwners"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f View the heads of the owners"
+        - "&f for this protection."
+        - ""
+        - "&c ▸ Click to view!"
+      action: "[OPEN_OWNERS]"
+    '24':
+      material: OAK_DOOR
+      name: "&#FF0000✦ Protection &8▸ &fMembers"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f See who has build"
+        - "&f permissions here."
+        - ""
+        - "&c ▸ Click to view!"
+      action: "[OPEN_MEMBERS]"
+    '29':
+      material: LEAD
+      name: "&#FF0000✦ Protection &8▸ &fSet Home"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Set a new spawn point"
+        - "&f for your protection."
+        - ""
+        - "&c ▸ Click to set!"
+      action: "[PLAYER] ps sethome;[CLOSE];[MESSAGE] messages.sethome-success"
+    '31':
+      material: ENDER_PEARL
+      name: "&#FF0000✦ Protection &8▸ &fTeleport"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Travel directly to the center"
+        - "&f of your protection."
+        - ""
+        - "&c ▸ Click to travel!"
+      action: "[CLOSE];[MESSAGE] messages.teleporting;[DELAY_CMD] 3 ps home"
+    '33':
+      material: SLIME_BALL
+      name: "&#FF0000✦ Protection &8▸ &fHide / Show"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Make your protection block"
+        - "&f invisible or visible again."
+        - ""
+        - "&8▪ &fStatus: %hidden_status%"
+        - ""
+        - "&f ▸ Left Click &7- &cHide block!"
+        - "&f ▸ Right Click &7- &cShow block!"
+        - ""
+      action_left: "[PLAYER] ps hide;[MESSAGE] messages.hide-success;[REFRESH]"
+      action_right: "[PLAYER] ps unhide;[MESSAGE] messages.unhide-success;[REFRESH]"
+    '38':
+      material: NAME_TAG
+      name: "&#FF0000✦ Protection &8▸ &fRename"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Give it a custom name."
+        - "&c Do not use color codes!"
+        - ""
+        - "&c ▸ Click to rename!"
+      action: "[PLAYER] ps name"
+    '40':
+      material: PAPER
+      name: "&#FF0000✦ Protection &8▸ &fFlags (Settings)"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Open the advanced menu to"
+        - "&f configure PvP, Mobs, and Explosions."
+        - ""
+        - "&c ▸ Click to open!"
+      action: "[OPEN_MENU] flags"
+    '42':
+      material: GLOWSTONE_DUST
+      name: "&#FF0000✦ Protection &8▸ &fView Borders"
+      lore:
+        - "&8Button | Editor"
+        - ""
+        - "&f Show or hide the visual"
+        - "&f limits of your zone with particles."
+        - ""
+        - "&c ▸ Click to toggle borders!"
+      action: "[PLAYER] ps view;[CLOSE];[MESSAGE] messages.border-success"
+    '45':
+      material: ARROW
+      name: "&fReturn to Protections"
+      lore:
+        - "&8Button"
+        - ""
+        - "&f Click to return to"
+        - "&f the list of all your zones."
+        - ""
+        - "&c ▸ Click to return!"
+      action: "[OPEN_LIST]"
+    '49':
+      material: TNT
+      name: "&#FF0000✦ Protection &8▸ &cDelete Protection!"
+      lore:
+        - "&8Button | Danger"
+        - ""
+        - "&f Destroy this protection and"
+        - "&f recover your original block."
+        - "&c This action cannot be undone!"
+        - ""
+        - "&c ▸ Click to destroy!"
+      action: "[PLAYER] ps reclaim;[CLOSE]"
+    '53':
+      material: BARRIER
+      name: "&cClose Menu"
+      lore: []
+      action: "[CLOSE]"
