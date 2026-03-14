@@ -1,3 +1,6 @@
+# Why? We've implemented some '' in this .yml file. 
+# Please delete yours and use this one to avoid problems.
+
 cooldown: '&6Warning: &7Please wait for %time% seconds before placing again!'
 no_such_command: ''
 no_access: '&cYou are not allowed to do that here.'

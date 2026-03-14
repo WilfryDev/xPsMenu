@@ -1,3 +1,5 @@
+# Example Block Protes Create
+
 # Define your protection block below
 # Use block type from here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 # --------------------------------------------------------------------------------------------------
@@ -6,6 +8,8 @@
 # To use UUIDs for player heads, go to https://sessionserver.mojang.com/session/minecraft/profile/PUT-UUID-HERE and copy the value from the "value" field not including quotes.
 # When you have the value, you can set the type to "PLAYER_HEAD:value"
 type = "TUBE_CORAL_BLOCK"
+
+
 
 # Another way to refer to the protection stone
 # Can be used for /ps give and /ps get
@@ -146,22 +150,22 @@ placing_bypasses_wg_passthrough = true
     # Name given to protection block when obtained with /ps give or /ps get
     # Also affects custom crafted items (see custom_recipe)
     # Leave as '' for no name
-    display_name = "&fProtección &8► &8(&720x20&8)"
+    display_name = "&fProtection &8► &8(&720x20&8)"
 
     # Lore given to protection block when obtained with /ps give or /ps get
     # Also affects custom crafted items (see custom_recipe)
     # Leave as [] for no lore
     lore = [
-        "&8Protecciones",
+        "&8 Protections",
         "",
-        " &fProtege tu casa de ",
-        " &flos demas jugadores ",
+        " &fProtect your home from ",
+        " &fthe other players ",
         "",
-        "&b ✎ Informacion: ",
-        "   &8▪ &fDueño: &7¡Nadie! ",
-        "   &8▪ &fTamaño &a(20x20) ",
+        "&b ✎ Information: ",
+        "   &8| &fEdge: &c20x20 ",
+        "   &8| &fSize &a(20x20) ",
         "",
-        "&7▲ ¡Mas en &6&nᴅᴇᴠ.xᴘʟᴜɢɪɴꜱ.ᴇꜱ&r&7!",
+        "&7▲ ¡More in &6&nᴅᴇᴠ.xᴘʟᴜɢɪɴꜱ.ᴇꜱ&r&7!",
 		"",
     ]
 
