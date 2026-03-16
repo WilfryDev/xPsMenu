@@ -72,7 +72,9 @@ You can use these variables anywhere on your server (Scoreboards, Holograms, Cha
 Building a custom core or an NPC script? You can easily hook into **xPsMenu** to open interfaces for your players using our static API.
 
 ### Add to your build.gradle:
+* We will soon update the API for greater control
 ```gradle
+
 dependencies {
     compileOnly fileTree(dir: 'libs', include: 'xPsMenu-v1.0.0.jar')
 }
@@ -81,15 +83,19 @@ Java
 import jn.willfrydev.xPsMenuAPI;
 import org.bukkit.entity.Player;
 
-public class MyCustomPlugin {
+public class xTestPlugin {
     
     public void openMenuForPlayer(Player player, String regionId) {
+
         // Opens the main Editor GUI for a specific region
+
         xPsMenuAPI.openMainMenu(player, "ps10x64y5z");
     }
 
     public void openListForPlayer(Player player) {
+
         // Opens the Dynamic Region Selector GUI for the player
+
         xPsMenuAPI.openSelector(player);
     }
 }

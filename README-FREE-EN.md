@@ -1,5 +1,4 @@
 # ✦ xPsMenu ✦
-*Developed by xPlugins*
 
 ## ☠ Overview
 A fully translated, deeply aesthetic, and highly customizable protection menu system. Redesigned with a clean, dark, and aggressive aesthetic to fit modern server standards.
@@ -18,3 +17,5 @@ A fully translated, deeply aesthetic, and highly customizable protection menu sy
 ## 🔗 Links
 - [Discord](https://xplugins.es/discord)
 - [Website](https://xplugins.es)
+
+*Developed by xPlugins*
